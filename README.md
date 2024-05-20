@@ -172,4 +172,4 @@ print(traveling_salesman(distances))  # Output: (80, (0, 1, 3, 2))
 
 <h2>Discussion:</h2>
 <ul>
-    <li><strong>O(1) - Constant Time</strong>: Extremely fast and independent of the input size.
+    <li><strong>O(1) - Constant Time</strong>: Extremely fast and independent of the input size.</
