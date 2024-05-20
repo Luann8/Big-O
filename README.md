@@ -164,11 +164,53 @@ print(traveling_salesman(distances))  # Output: (80, (0, 1, 3, 2))
 </code></pre>
 
 <h2>Discussion:</h2>
-<ul>
-    <li><strong>O(1) - Constant Time</strong>: Extremely fast and independent of the input size.</li>
-    <li><strong>O(1) - Constant Time</strong>: Extremely fast and independent of the input size.</li>
-    <li><strong>O(1) - Constant Time</strong>: Extremely fast and independent of the input size.</li>
-    <li><strong>O(1) - Constant Time</strong>: Extremely fast and independent of the input size.</li>
-    <li><strong>O(1) - Constant Time</strong>: Extremely fast and independent of the input size.</li>
+<h2>Common Big O Complexities</h2>
+  <section>
+    <h2>O(1) - Constant Time</h2>
+    <p>The execution time remains constant, regardless of the input size. This means the algorithm takes a fixed amount of time to run, no matter how much data it needs to process.</p>
+    <ul>
+      <li><b>Advantages:</b> Extremely fast and efficient, especially for small inputs.</li>
+      <li><b>Disadvantages:</b> Limited applicability, as only a few basic operations can achieve constant time complexity.</li>
+      <li><b>Suitable Situations:</b> Simple operations like array element access, variable assignment, mathematical calculations with fixed-size operands.</li>
+    </ul>
+  </section>
 
-</ul>
+  <section>
+    <h2>O(log n) - Logarithmic Time</h2>
+    <p>The execution time grows logarithmically with the input size (n). This means as the input size doubles, the time complexity increases by a constant factor (typically, the logarithm base 2).</p>
+    <ul>
+      <li><b>Advantages:</b> Highly efficient for large datasets, making it a valuable choice for searching and sorting algorithms.</li>
+      <li><b>Disadvantages:</b> Requires specific data structures like balanced search trees for optimal performance.</li>
+      <li><b>Suitable Situations:</b> Binary search in sorted arrays or trees, divide-and-conquer algorithms that repeatedly halve the problem size.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>O(n) - Linear Time</h2>
+    <p>The execution time grows linearly with the input size. In simpler terms, the time complexity increases proportionally to the number of elements in the input.</p>
+    <ul>
+      <li><b>Advantages:</b> Relatively simple to understand and implement, making it a common choice for basic operations.</li>
+      <li><b>Disadvantages:</b> May become inefficient for very large datasets.</li>
+      <li><b>Suitable Situations:</b> Iterating through a list or array to perform an operation on each element, calculating the sum or average of elements in a collection.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>O(n log n) - Log-Linear Time</h2>
+    <p>The execution time grows faster than logarithmic but slower than polynomial. This complexity class often arises in divide-and-conquer algorithms that combine efficient sorting or searching with linear operations.</p>
+    <ul>
+      <li><b>Advantages:</b> More efficient for sorting and certain divide-and-conquer algorithms compared to O(n^2).</li>
+      <li><b>Disadvantages:</b> More complex to implement than O(n).</li>
+      <li><b>Suitable Situations:</b> Sorting algorithms like Merge Sort and Quick Sort, which divide the input, conquer subproblems, and then combine the results.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>O(n²) - Quadratic Time</h2>
+    <p>The execution time grows quadratically with the input size. This means a fourfold increase in input size leads to a sixteenfold increase in time complexity.</p>
+    <ul>
+      <li><b>Advantages:</b> Can be relatively simple to understand and implement for certain types of problems.</li>
+      <li><b>Disadvantages:</b> Becomes rapidly inefficient for large datasets.</li>
+      <li><b>Suitable Situations:</b> Sorting small lists using algorithms like Bubble Sort or Selection Sort, nested loops iterating over all pairs of elements in an input.</li>
+    </ul>
+  </section>
